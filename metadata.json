@@ -1,0 +1,6 @@
+{
+  "name": "Canalones Carrión",
+  "description": "Fabricación a medida, instalación, reparación y limpieza de canalones de aluminio continuo en Castilla y León.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
