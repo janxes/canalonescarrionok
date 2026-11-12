@@ -44,19 +44,19 @@ export const Navbar: React.FC<NavbarProps> = ({
   return (
     <>
       {/* Top Banner de Atención Rápida */}
-      <div className="bg-[#155A96] text-white text-xs sm:text-sm py-1.5 px-4">
+      <div className="bg-[#155A96] text-white text-sm py-2 px-4">
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
           <div className="flex items-center gap-2">
-            <span className="material-symbols-outlined text-[16px] text-[#D5E4F8]">
+            <span className="material-symbols-outlined text-[18px] text-[#D5E4F8]">
               local_shipping
             </span>
             <span className="font-medium">
               Furgoneta Taller Móvil in situ en las 9 provincias de Castilla y León
             </span>
           </div>
-          <div className="hidden md:flex items-center gap-4 text-xs">
-            <span className="flex items-center gap-1">
-              <span className="material-symbols-outlined text-[15px] text-[#D5E4F8]">
+          <div className="hidden md:flex items-center gap-4 text-sm">
+            <span className="flex items-center gap-1.5">
+              <span className="material-symbols-outlined text-[17px] text-[#D5E4F8]">
                 verified
               </span>
               Garantía por escrito
@@ -64,9 +64,9 @@ export const Navbar: React.FC<NavbarProps> = ({
             <span className="text-white/40">|</span>
             <a
               href="tel:+34676000000"
-              className="font-bold hover:underline flex items-center gap-1 text-[#D5E4F8]"
+              className="font-bold hover:underline flex items-center gap-1.5 text-[#D5E4F8]"
             >
-              <span className="material-symbols-outlined text-[15px]">call</span>
+              <span className="material-symbols-outlined text-[17px]">call</span>
               Tel: 676 00 00 00
             </a>
           </div>
@@ -98,10 +98,10 @@ export const Navbar: React.FC<NavbarProps> = ({
                 className="h-22 sm:h-26 md:h-28 w-auto object-contain drop-shadow-sm"
               />
               <div className="hidden lg:block border-l border-[#C2C7D0] pl-3">
-                <span className="block text-[11px] font-bold text-[#155A96] uppercase tracking-wider">
+                <span className="block text-xs font-bold text-[#155A96] uppercase tracking-wider">
                   Castilla y León
                 </span>
-                <span className="block text-[11px] text-[#58606B]">
+                <span className="block text-xs text-[#58606B]">
                   Fabricación continua in situ
                 </span>
               </div>
@@ -111,25 +111,25 @@ export const Navbar: React.FC<NavbarProps> = ({
             <nav className="hidden md:flex items-center gap-1 lg:gap-2">
               <button
                 onClick={() => handleNavClick('servicios')}
-                className="px-3.5 py-2 rounded-full text-sm font-medium text-[#41484D] hover:text-[#155A96] hover:bg-[#F1F4F9] transition-colors"
+                className="px-4 py-2 rounded-full text-base font-medium text-[#41484D] hover:text-[#155A96] hover:bg-[#F1F4F9] transition-colors"
               >
                 Servicios
               </button>
               <button
                 onClick={() => handleNavClick('materiales')}
-                className="px-3.5 py-2 rounded-full text-sm font-medium text-[#41484D] hover:text-[#155A96] hover:bg-[#F1F4F9] transition-colors"
+                className="px-4 py-2 rounded-full text-base font-medium text-[#41484D] hover:text-[#155A96] hover:bg-[#F1F4F9] transition-colors"
               >
                 Materiales
               </button>
               <button
                 onClick={() => handleNavClick('ventajas')}
-                className="px-3.5 py-2 rounded-full text-sm font-medium text-[#41484D] hover:text-[#155A96] hover:bg-[#F1F4F9] transition-colors"
+                className="px-4 py-2 rounded-full text-base font-medium text-[#41484D] hover:text-[#155A96] hover:bg-[#F1F4F9] transition-colors"
               >
                 Por qué elegirnos
               </button>
               <button
                 onClick={handleBlogClick}
-                className={`px-3.5 py-2 rounded-full text-sm font-medium transition-colors ${
+                className={`px-4 py-2 rounded-full text-base font-medium transition-colors ${
                   currentView === 'blog' || currentView === 'post'
                     ? 'bg-[#D5E4F8] text-[#062544] font-bold'
                     : 'text-[#41484D] hover:text-[#155A96] hover:bg-[#F1F4F9]'
@@ -143,7 +143,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             <div className="hidden sm:flex items-center gap-3">
               <a
                 href="tel:+34676000000"
-                className="hidden xl:inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold text-[#155A96] bg-[#D5E4F8]/60 hover:bg-[#D5E4F8] transition-colors"
+                className="hidden xl:inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold text-[#155A96] bg-[#D5E4F8]/60 hover:bg-[#D5E4F8] transition-colors"
                 title="Llámanos directamente"
               >
                 <span className="material-symbols-outlined text-[18px]">phone_in_talk</span>
@@ -152,7 +152,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
               <button
                 onClick={() => handleNavClick('presupuesto')}
-                className="inline-flex items-center px-6 py-2.5 rounded-full text-sm font-bold text-white bg-[#155A96] hover:bg-[#0e4475] active:scale-98 shadow-sm hover:shadow transition-all"
+                className="inline-flex items-center px-6 py-3 rounded-full text-base font-bold text-white bg-[#155A96] hover:bg-[#0e4475] active:scale-98 shadow-sm hover:shadow transition-all"
               >
                 Pedir Presupuesto
               </button>

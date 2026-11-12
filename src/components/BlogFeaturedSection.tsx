@@ -75,11 +75,11 @@ export const BlogFeaturedSection: React.FC<BlogFeaturedSectionProps> = ({
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div className="max-w-2xl">
             <div className="flex items-center gap-2 mb-3">
-              <span className="px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#D5E4F8] text-[#062544]">
+              <span className="px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-wider bg-[#D5E4F8] text-[#062544]">
                 Blog Técnico y Consejos
               </span>
               {isFallback && (
-                <span className="px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-[#F1F4F9] text-[#58606B] border border-[#E2E7EE]" title="Mostrando artículos de guía técnica de respaldo">
+                <span className="px-3 py-1 rounded-full text-sm font-semibold bg-[#F1F4F9] text-[#58606B] border border-[#E2E7EE]" title="Mostrando artículos de guía técnica de respaldo">
                   Modo Fallback / Local
                 </span>
               )}
@@ -87,7 +87,7 @@ export const BlogFeaturedSection: React.FC<BlogFeaturedSectionProps> = ({
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#191C20] tracking-tight font-heading">
               Actualidad, normativa y cuidado de cubiertas
             </h2>
-            <p className="mt-3 text-base text-[#41484D]">
+            <p className="mt-3 text-lg text-[#41484D] leading-relaxed">
               Artículos elaborados por nuestros técnicos instaladores con recomendaciones prácticas 
               para mantener canalones, bajantes y limahoyas en perfecto estado.
             </p>
@@ -107,10 +107,10 @@ export const BlogFeaturedSection: React.FC<BlogFeaturedSectionProps> = ({
 
             <button
               onClick={onNavigateBlog}
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-xs sm:text-sm font-bold text-[#155A96] bg-[#D5E4F8]/70 hover:bg-[#155A96] hover:text-white transition-all shadow-2xs"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm sm:text-base font-bold text-[#155A96] bg-[#D5E4F8]/70 hover:bg-[#155A96] hover:text-white transition-all shadow-2xs"
             >
               <span>Ver todos los artículos</span>
-              <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
+              <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
             </button>
           </div>
         </div>
@@ -142,52 +142,52 @@ export const BlogFeaturedSection: React.FC<BlogFeaturedSectionProps> = ({
               >
                 <div>
                   {/* Featured Image */}
-                  <div className="relative h-52 overflow-hidden bg-[#EAEEF4]">
+                  <div className="relative h-56 overflow-hidden bg-[#EAEEF4]">
                     <img
-                      src={post.featuredImageUrl || 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80'}
+                      src={post.featuredImageUrl || 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80'}
                       alt={post.title.rendered}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       loading="lazy"
                     />
                     <div className="absolute top-4 left-4">
-                      <span className="px-3 py-1 rounded-full text-xs font-bold bg-white/95 backdrop-blur-md text-[#155A96] shadow-sm">
+                      <span className="px-3.5 py-1.5 rounded-full text-sm font-bold bg-white/95 backdrop-blur-md text-[#155A96] shadow-sm">
                         {post.categoryName || 'Guía Técnica'}
                       </span>
                     </div>
                   </div>
 
                   {/* Post Content Details */}
-                  <div className="p-6">
-                    <div className="flex items-center gap-3 text-xs text-[#58606B] mb-3">
-                      <span className="flex items-center gap-1">
-                        <span className="material-symbols-outlined text-[16px] text-[#155A96]">
+                  <div className="p-6 sm:p-7">
+                    <div className="flex items-center gap-3 text-sm text-[#58606B] mb-3">
+                      <span className="flex items-center gap-1.5">
+                        <span className="material-symbols-outlined text-[18px] text-[#155A96]">
                           calendar_today
                         </span>
                         {formatDate(post.date)}
                       </span>
                       <span>•</span>
-                      <span className="flex items-center gap-1">
-                        <span className="material-symbols-outlined text-[16px] text-[#155A96]">
+                      <span className="flex items-center gap-1.5">
+                        <span className="material-symbols-outlined text-[18px] text-[#155A96]">
                           schedule
                         </span>
                         {post.readTimeMinutes || 4} min de lectura
                       </span>
                     </div>
 
-                    <h3 className="font-bold text-lg text-[#191C20] font-heading group-hover:text-[#155A96] transition-colors leading-snug mb-3 line-clamp-2">
+                    <h3 className="font-bold text-xl text-[#191C20] font-heading group-hover:text-[#155A96] transition-colors leading-snug mb-3 line-clamp-2">
                       {post.title.rendered}
                     </h3>
 
-                    <p className="text-xs sm:text-sm text-[#41484D] line-clamp-3 leading-relaxed">
+                    <p className="text-base text-[#41484D] line-clamp-3 leading-relaxed">
                       {cleanExcerpt(post.excerpt.rendered)}
                     </p>
                   </div>
                 </div>
 
                 {/* Card Action footer */}
-                <div className="px-6 pb-6 pt-2 border-t border-[#F1F4F9] flex items-center justify-between text-xs font-bold text-[#155A96]">
+                <div className="px-6 sm:px-7 pb-6 pt-3 border-t border-[#F1F4F9] flex items-center justify-between text-sm font-bold text-[#155A96]">
                   <span className="group-hover:underline">Leer artículo completo</span>
-                  <span className="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">
+                  <span className="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">
                     arrow_forward
                   </span>
                 </div>

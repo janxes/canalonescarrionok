@@ -65,21 +65,21 @@ export const ComplementaryServicesSection: React.FC<ComplementaryServicesSection
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div className="max-w-2xl">
-            <span className="px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-[#E0F2FE] text-[#034E7B] inline-block mb-3">
+            <span className="px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-wider bg-[#E0F2FE] text-[#034E7B] inline-block mb-3">
               Mantenimiento y Reparación Técnica
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#191C20] tracking-tight font-heading">
               Servicios complementarios para alargar la vida de tu tejado
             </h2>
-            <p className="mt-3 text-base text-[#41484D]">
+            <p className="mt-3 text-lg text-[#41484D] leading-relaxed">
               No solo instalamos sistemas nuevos: diagnosticamos problemas existentes, limpiamos y protegemos 
               instalaciones pluviales en cualquier municipio de Castilla y León.
             </p>
           </div>
 
           <div className="shrink-0">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-[#F1F4F9] text-xs font-semibold text-[#58606B]">
-              <span className="material-symbols-outlined text-[18px] text-[#155A96]">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-[#F1F4F9] text-sm font-semibold text-[#58606B]">
+              <span className="material-symbols-outlined text-[20px] text-[#155A96]">
                 schedule
               </span>
               <span>Intervenciones rápidas y seguras</span>
@@ -96,34 +96,34 @@ export const ComplementaryServicesSection: React.FC<ComplementaryServicesSection
             >
               <div>
                 <div className={`w-12 h-12 rounded-2xl ${service.badgeBg} flex items-center justify-center mb-5 ${service.accentColor}`}>
-                  <span className="material-symbols-outlined text-[26px]">
+                  <span className="material-symbols-outlined text-[28px]">
                     {service.icon}
                   </span>
                 </div>
 
-                <h3 className="font-bold text-lg text-[#191C20] font-heading mb-3 group-hover:text-[#155A96] transition-colors">
+                <h3 className="font-bold text-xl text-[#191C20] font-heading mb-3 group-hover:text-[#155A96] transition-colors">
                   {service.title}
                 </h3>
 
-                <p className="text-xs sm:text-sm text-[#41484D] leading-relaxed mb-4">
+                <p className="text-base text-[#41484D] leading-relaxed mb-5 font-normal">
                   {service.description}
                 </p>
               </div>
 
-              <div className="pt-4 border-t border-black/5 space-y-3">
-                <div className="flex items-start gap-1.5 text-[11px] font-medium text-[#58606B]">
-                  <span className="material-symbols-outlined text-[15px] text-[#155A96] shrink-0">
+              <div className="pt-4 border-t border-black/5 space-y-3.5">
+                <div className="flex items-start gap-2 text-sm font-medium text-[#58606B]">
+                  <span className="material-symbols-outlined text-[18px] text-[#155A96] shrink-0 mt-0.5">
                     lightbulb
                   </span>
-                  <span>{service.highlight}</span>
+                  <span className="leading-snug">{service.highlight}</span>
                 </div>
 
                 <button
                   onClick={() => onSelectService(service.title)}
-                  className="w-full py-2.5 px-4 rounded-full text-xs font-bold text-[#155A96] bg-white border border-[#C2C7D0]/60 hover:bg-[#155A96] hover:text-white hover:border-[#155A96] transition-all flex items-center justify-center gap-1.5 shadow-2xs"
+                  className="w-full py-3 px-4 rounded-full text-sm font-bold text-[#155A96] bg-white border border-[#C2C7D0]/60 hover:bg-[#155A96] hover:text-white hover:border-[#155A96] transition-all flex items-center justify-center gap-2 shadow-2xs"
                 >
                   <span>Pedir presupuesto</span>
-                  <span className="material-symbols-outlined text-[14px]">chevron_right</span>
+                  <span className="material-symbols-outlined text-[16px]">chevron_right</span>
                 </button>
               </div>
 

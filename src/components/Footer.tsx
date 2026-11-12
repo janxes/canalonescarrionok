@@ -50,25 +50,25 @@ export const Footer: React.FC<FooterProps> = ({
                 />
               </button>
 
-              <p className="text-xs sm:text-sm text-[#41484D] leading-relaxed max-w-md">
+              <p className="text-base text-[#41484D] leading-relaxed max-w-md">
                 <strong>Canalones Carrión</strong> es la empresa de referencia en la fabricación a 
                 medida, instalación, reparación y limpieza de <em>canalones de aluminio continuo sin juntas</em>, 
                 zinc y cobre en toda la comunidad autónoma de <strong>Castilla y León</strong>. 
                 Tecnología in situ a pie de obra con furgón taller propio y garantía por escrito.
               </p>
 
-              <div className="flex items-center gap-2 text-xs text-[#155A96] font-semibold">
-                <span className="material-symbols-outlined text-[18px]">verified</span>
+              <div className="flex items-center gap-2 text-sm text-[#155A96] font-semibold">
+                <span className="material-symbols-outlined text-[20px]">verified</span>
                 <span>Instalaciones aseguradas con cumplimiento estricto de PRL</span>
               </div>
             </div>
 
             {/* Col 2: Servicios & Soluciones (2 cols) */}
             <div className="lg:col-span-2 space-y-3">
-              <h4 className="text-xs font-bold uppercase tracking-wider text-[#191C20] font-heading">
+              <h4 className="text-sm font-bold uppercase tracking-wider text-[#191C20] font-heading">
                 Servicios
               </h4>
-              <ul className="space-y-2 text-xs sm:text-sm">
+              <ul className="space-y-2.5 text-sm sm:text-base">
                 <li>
                   <button
                     onClick={() => {
@@ -129,10 +129,10 @@ export const Footer: React.FC<FooterProps> = ({
 
             {/* Col 3: Enlaces Rápidos y Blog (2 cols) */}
             <div className="lg:col-span-2 space-y-3">
-              <h4 className="text-xs font-bold uppercase tracking-wider text-[#191C20] font-heading">
+              <h4 className="text-sm font-bold uppercase tracking-wider text-[#191C20] font-heading">
                 Navegación
               </h4>
-              <ul className="space-y-2 text-xs sm:text-sm">
+              <ul className="space-y-2.5 text-sm sm:text-base">
                 <li>
                   <button
                     onClick={() => {
@@ -179,26 +179,26 @@ export const Footer: React.FC<FooterProps> = ({
 
             {/* Col 4: Contacto & Provincias (3 cols) */}
             <div className="lg:col-span-3 space-y-3">
-              <h4 className="text-xs font-bold uppercase tracking-wider text-[#191C20] font-heading">
+              <h4 className="text-sm font-bold uppercase tracking-wider text-[#191C20] font-heading">
                 Contacto Directo
               </h4>
-              <div className="space-y-2 text-xs sm:text-sm">
+              <div className="space-y-2 text-sm sm:text-base">
                 <a
                   href="tel:+34676000000"
                   className="flex items-center gap-2 hover:text-[#155A96] font-semibold text-[#191C20]"
                 >
-                  <span className="material-symbols-outlined text-[16px] text-[#155A96]">call</span>
+                  <span className="material-symbols-outlined text-[18px] text-[#155A96]">call</span>
                   <span>676 00 00 00</span>
                 </a>
                 <a
                   href="mailto:info@canalonescarrion.com"
                   className="flex items-center gap-2 hover:text-[#155A96]"
                 >
-                  <span className="material-symbols-outlined text-[16px] text-[#155A96]">mail</span>
+                  <span className="material-symbols-outlined text-[18px] text-[#155A96]">mail</span>
                   <span>info@canalonescarrion.com</span>
                 </a>
-                <div className="flex items-start gap-2 pt-1 text-xs text-[#58606B]">
-                  <span className="material-symbols-outlined text-[16px] text-[#155A96] shrink-0 mt-0.5">
+                <div className="flex items-start gap-2 pt-1 text-sm text-[#58606B]">
+                  <span className="material-symbols-outlined text-[18px] text-[#155A96] shrink-0 mt-0.5">
                     location_on
                   </span>
                   <span>Sede central y taller móvil con servicio en toda Castilla y León</span>
@@ -207,14 +207,14 @@ export const Footer: React.FC<FooterProps> = ({
 
               {/* Provincias chips */}
               <div className="pt-3">
-                <span className="block text-[11px] font-bold text-[#191C20] uppercase tracking-wider mb-1.5">
+                <span className="block text-xs font-bold text-[#191C20] uppercase tracking-wider mb-2">
                   Provincias atendidas:
                 </span>
-                <div className="flex flex-wrap gap-1">
+                <div className="flex flex-wrap gap-1.5">
                   {provinces.map((p) => (
                     <span
                       key={p}
-                      className="text-[10px] bg-[#EAEEF4] px-2 py-0.5 rounded-full text-[#41484D]"
+                      className="text-xs bg-[#EAEEF4] px-2.5 py-1 rounded-full text-[#41484D] font-medium"
                     >
                       {p}
                     </span>
@@ -226,13 +226,13 @@ export const Footer: React.FC<FooterProps> = ({
           </div>
 
           {/* Subfooter: Copyright and Legal */}
-          <div className="pt-8 border-t border-[#EAEEF4] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#58606B]">
+          <div className="pt-8 border-t border-[#EAEEF4] flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-[#58606B]">
             <p>
               © {new Date().getFullYear()} <strong>Canalones Carrión</strong>. Todos los derechos reservados.
               Fabricación in situ de canalones en Castilla y León.
             </p>
 
-            <div className="flex flex-wrap items-center gap-4">
+            <div className="flex flex-wrap items-center gap-5">
               <button
                 onClick={() => setLegalModal('aviso')}
                 className="hover:text-[#155A96] underline"

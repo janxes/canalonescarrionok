@@ -145,7 +145,7 @@ export const FALLBACK_POSTS: WordPressPost[] = [
         </div>
       `,
     },
-    featuredImageUrl: 'https://images.unsplash.com/photo-1541888946425-d0fbb186c5f7?auto=format&fit=crop&w=1200&q=80',
+    featuredImageUrl: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80',
     categoryName: 'Comunidades de Vecinos',
     readTimeMinutes: 6,
     authorName: 'Departamento Técnico',

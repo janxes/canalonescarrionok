@@ -58,13 +58,13 @@ export const ContactPresupuestoSection: React.FC<ContactPresupuestoSectionProps>
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14 sm:mb-16">
-          <span className="px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-[#D5E4F8] text-[#062544] inline-block mb-3">
+          <span className="px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-wider bg-[#D5E4F8] text-[#062544] inline-block mb-3">
             Presupuesto Sin Compromiso
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#191C20] tracking-tight font-heading">
             Pide tu valoración técnica en 24 horas
           </h2>
-          <p className="mt-4 text-base sm:text-lg text-[#41484D]">
+          <p className="mt-4 text-lg text-[#41484D] leading-relaxed">
             Indícanos los metros aproximados o el tipo de edificación. Nos desplazamos con nuestro 
             taller móvil para inspeccionar el alero y darte un precio cerrado y garantizado por escrito.
           </p>
@@ -77,30 +77,30 @@ export const ContactPresupuestoSection: React.FC<ContactPresupuestoSectionProps>
           <div className="lg:col-span-5 space-y-6">
             
             <div className="bg-[#FAFBFD] rounded-3xl p-6 sm:p-8 border border-[#EAEEF4] space-y-6 shadow-sm">
-              <h3 className="text-xl font-bold font-heading text-[#191C20] flex items-center gap-2">
-                <span className="material-symbols-outlined text-[#155A96]">
+              <h3 className="text-2xl font-bold font-heading text-[#191C20] flex items-center gap-2.5">
+                <span className="material-symbols-outlined text-[26px] text-[#155A96]">
                   contact_phone
                 </span>
                 <span>Atención Directa Carrión</span>
               </h3>
-              <p className="text-sm text-[#41484D] leading-relaxed">
+              <p className="text-base text-[#41484D] leading-relaxed font-normal">
                 Si prefieres hablar directamente con un técnico antes de rellenar el formulario, 
                 llámanos o escríbenos por WhatsApp con fotos de tu fachada.
               </p>
 
               {/* Direct clickable cards */}
-              <div className="space-y-3.5">
+              <div className="space-y-4">
                 
                 <a
                   href="tel:+34676000000"
                   className="flex items-center gap-4 p-4 rounded-2xl bg-white border border-[#E2E7EE] hover:border-[#155A96] hover:bg-[#F1F4F9] transition-all group"
                 >
-                  <div className="w-11 h-11 rounded-full bg-[#D5E4F8] text-[#155A96] flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
-                    <span className="material-symbols-outlined text-[22px]">phone</span>
+                  <div className="w-12 h-12 rounded-full bg-[#D5E4F8] text-[#155A96] flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                    <span className="material-symbols-outlined text-[24px]">phone</span>
                   </div>
                   <div className="overflow-hidden">
-                    <span className="block text-xs text-[#58606B]">Teléfono directo</span>
-                    <span className="font-bold text-base text-[#155A96] tracking-wide">
+                    <span className="block text-sm text-[#58606B]">Teléfono directo</span>
+                    <span className="font-bold text-lg text-[#155A96] tracking-wide">
                       676 00 00 00
                     </span>
                   </div>
@@ -112,12 +112,12 @@ export const ContactPresupuestoSection: React.FC<ContactPresupuestoSectionProps>
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 p-4 rounded-2xl bg-white border border-[#E2E7EE] hover:border-emerald-600 hover:bg-emerald-50/50 transition-all group"
                 >
-                  <div className="w-11 h-11 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
-                    <span className="material-symbols-outlined text-[22px]">chat</span>
+                  <div className="w-12 h-12 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                    <span className="material-symbols-outlined text-[24px]">chat</span>
                   </div>
                   <div className="overflow-hidden">
-                    <span className="block text-xs text-[#58606B]">WhatsApp inmediato</span>
-                    <span className="font-bold text-base text-emerald-800">
+                    <span className="block text-sm text-[#58606B]">WhatsApp inmediato</span>
+                    <span className="font-bold text-lg text-emerald-800">
                       Envíanos fotos o dudas
                     </span>
                   </div>
@@ -127,12 +127,12 @@ export const ContactPresupuestoSection: React.FC<ContactPresupuestoSectionProps>
                   href="mailto:info@canalonescarrion.com"
                   className="flex items-center gap-4 p-4 rounded-2xl bg-white border border-[#E2E7EE] hover:border-[#155A96] hover:bg-[#F1F4F9] transition-all group"
                 >
-                  <div className="w-11 h-11 rounded-full bg-[#D5E4F8] text-[#155A96] flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
-                    <span className="material-symbols-outlined text-[22px]">mail</span>
+                  <div className="w-12 h-12 rounded-full bg-[#D5E4F8] text-[#155A96] flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                    <span className="material-symbols-outlined text-[24px]">mail</span>
                   </div>
                   <div className="overflow-hidden">
-                    <span className="block text-xs text-[#58606B]">Correo electrónico</span>
-                    <span className="font-semibold text-sm text-[#191C20] truncate block">
+                    <span className="block text-sm text-[#58606B]">Correo electrónico</span>
+                    <span className="font-semibold text-base text-[#191C20] truncate block">
                       info@canalonescarrion.com
                     </span>
                   </div>
@@ -142,13 +142,13 @@ export const ContactPresupuestoSection: React.FC<ContactPresupuestoSectionProps>
 
               {/* Service Areas */}
               <div className="pt-4 border-t border-[#EAEEF4]">
-                <span className="block text-xs font-bold uppercase tracking-wider text-[#191C20] mb-2 flex items-center gap-1.5">
-                  <span className="material-symbols-outlined text-[16px] text-[#155A96]">
+                <span className="block text-sm font-bold uppercase tracking-wider text-[#191C20] mb-2 flex items-center gap-2">
+                  <span className="material-symbols-outlined text-[18px] text-[#155A96]">
                     distance
                   </span>
                   <span>Área de Cobertura Principal</span>
                 </span>
-                <p className="text-xs text-[#41484D] leading-relaxed">
+                <p className="text-base text-[#41484D] leading-relaxed">
                   Base operativa central con desplazamientos diarios a Valladolid, Palencia, Burgos, 
                   León, Zamora, Salamanca, Segovia, Soria y Ávila. Sin sobrecostes desproporcionados 
                   por kilometraje.
@@ -156,9 +156,9 @@ export const ContactPresupuestoSection: React.FC<ContactPresupuestoSectionProps>
               </div>
 
               {/* Horario */}
-              <div className="p-3.5 rounded-2xl bg-[#E0F2FE]/50 border border-[#BAE6FD] text-xs text-[#034E7B] flex items-center gap-2.5">
-                <span className="material-symbols-outlined text-[18px] shrink-0">schedule</span>
-                <span>
+              <div className="p-4 rounded-2xl bg-[#E0F2FE]/50 border border-[#BAE6FD] text-sm text-[#034E7B] flex items-center gap-3">
+                <span className="material-symbols-outlined text-[20px] shrink-0">schedule</span>
+                <span className="leading-snug">
                   <strong>Horario de atención:</strong> Lunes a Viernes de 08:00 a 20:00 h. Sábados de 09:00 a 14:00 h.
                 </span>
               </div>
@@ -172,10 +172,10 @@ export const ContactPresupuestoSection: React.FC<ContactPresupuestoSectionProps>
             <div className="bg-[#FAFBFD] rounded-3xl p-6 sm:p-10 border border-[#EAEEF4] shadow-md">
               
               <div className="mb-6">
-                <h3 className="text-xl sm:text-2xl font-bold font-heading text-[#191C20]">
+                <h3 className="text-2xl font-bold font-heading text-[#191C20]">
                   Formulario de Solicitud de Presupuesto
                 </h3>
-                <p className="text-xs sm:text-sm text-[#58606B] mt-1">
+                <p className="text-base text-[#58606B] mt-1">
                   Rellena los campos y te responderemos por teléfono o correo en menos de 24 horas laborales.
                 </p>
               </div>
@@ -205,7 +205,7 @@ export const ContactPresupuestoSection: React.FC<ContactPresupuestoSectionProps>
                   <div className="space-y-1.5">
                     <label
                       htmlFor="nombre"
-                      className="block text-xs font-bold uppercase tracking-wider text-[#191C20]"
+                      className="block text-sm font-bold uppercase tracking-wider text-[#191C20]"
                     >
                       Nombre o Empresa <span className="text-red-500">*</span>
                     </label>
@@ -216,7 +216,7 @@ export const ContactPresupuestoSection: React.FC<ContactPresupuestoSectionProps>
                         name="nombre"
                         required
                         placeholder="Ej. Roberto Gómez / Comunidad C/ Mayor"
-                        className="w-full px-4 py-3 rounded-2xl bg-white border border-[#C2C7D0] focus:border-[#155A96] focus:ring-2 focus:ring-[#155A96]/20 text-sm text-[#191C20] placeholder-[#717781] outline-none transition-all"
+                        className="w-full px-4 py-3.5 rounded-2xl bg-white border border-[#C2C7D0] focus:border-[#155A96] focus:ring-2 focus:ring-[#155A96]/20 text-base text-[#191C20] placeholder-[#717781] outline-none transition-all"
                       />
                     </div>
                   </div>
@@ -225,7 +225,7 @@ export const ContactPresupuestoSection: React.FC<ContactPresupuestoSectionProps>
                   <div className="space-y-1.5">
                     <label
                       htmlFor="telefono"
-                      className="block text-xs font-bold uppercase tracking-wider text-[#191C20]"
+                      className="block text-sm font-bold uppercase tracking-wider text-[#191C20]"
                     >
                       Teléfono de contacto <span className="text-red-500">*</span>
                     </label>
@@ -235,7 +235,7 @@ export const ContactPresupuestoSection: React.FC<ContactPresupuestoSectionProps>
                       name="telefono"
                       required
                       placeholder="Ej. 676 12 34 56"
-                      className="w-full px-4 py-3 rounded-2xl bg-white border border-[#C2C7D0] focus:border-[#155A96] focus:ring-2 focus:ring-[#155A96]/20 text-sm text-[#191C20] placeholder-[#717781] outline-none transition-all"
+                      className="w-full px-4 py-3.5 rounded-2xl bg-white border border-[#C2C7D0] focus:border-[#155A96] focus:ring-2 focus:ring-[#155A96]/20 text-base text-[#191C20] placeholder-[#717781] outline-none transition-all"
                     />
                   </div>
                 </div>
@@ -245,7 +245,7 @@ export const ContactPresupuestoSection: React.FC<ContactPresupuestoSectionProps>
                   <div className="space-y-1.5">
                     <label
                       htmlFor="email"
-                      className="block text-xs font-bold uppercase tracking-wider text-[#191C20]"
+                      className="block text-sm font-bold uppercase tracking-wider text-[#191C20]"
                     >
                       Correo electrónico <span className="text-red-500">*</span>
                     </label>
@@ -255,7 +255,7 @@ export const ContactPresupuestoSection: React.FC<ContactPresupuestoSectionProps>
                       name="email"
                       required
                       placeholder="tuemail@ejemplo.com"
-                      className="w-full px-4 py-3 rounded-2xl bg-white border border-[#C2C7D0] focus:border-[#155A96] focus:ring-2 focus:ring-[#155A96]/20 text-sm text-[#191C20] placeholder-[#717781] outline-none transition-all"
+                      className="w-full px-4 py-3.5 rounded-2xl bg-white border border-[#C2C7D0] focus:border-[#155A96] focus:ring-2 focus:ring-[#155A96]/20 text-base text-[#191C20] placeholder-[#717781] outline-none transition-all"
                     />
                   </div>
 
@@ -263,7 +263,7 @@ export const ContactPresupuestoSection: React.FC<ContactPresupuestoSectionProps>
                   <div className="space-y-1.5">
                     <label
                       htmlFor="provincia"
-                      className="block text-xs font-bold uppercase tracking-wider text-[#191C20]"
+                      className="block text-sm font-bold uppercase tracking-wider text-[#191C20]"
                     >
                       Provincia (Castilla y León) <span className="text-red-500">*</span>
                     </label>
@@ -272,7 +272,7 @@ export const ContactPresupuestoSection: React.FC<ContactPresupuestoSectionProps>
                       name="provincia"
                       required
                       defaultValue="Valladolid"
-                      className="w-full px-4 py-3 rounded-2xl bg-white border border-[#C2C7D0] focus:border-[#155A96] focus:ring-2 focus:ring-[#155A96]/20 text-sm text-[#191C20] outline-none transition-all"
+                      className="w-full px-4 py-3.5 rounded-2xl bg-white border border-[#C2C7D0] focus:border-[#155A96] focus:ring-2 focus:ring-[#155A96]/20 text-base text-[#191C20] outline-none transition-all"
                     >
                       {provinciasCyL.map((prov) => (
                         <option key={prov} value={prov}>
@@ -288,7 +288,7 @@ export const ContactPresupuestoSection: React.FC<ContactPresupuestoSectionProps>
                   <div className="space-y-1.5">
                     <label
                       htmlFor="localidad"
-                      className="block text-xs font-bold uppercase tracking-wider text-[#191C20]"
+                      className="block text-sm font-bold uppercase tracking-wider text-[#191C20]"
                     >
                       Localidad o Municipio
                     </label>
@@ -297,7 +297,7 @@ export const ContactPresupuestoSection: React.FC<ContactPresupuestoSectionProps>
                       id="localidad"
                       name="localidad"
                       placeholder="Ej. Laguna de Duero, Medina del Campo..."
-                      className="w-full px-4 py-3 rounded-2xl bg-white border border-[#C2C7D0] focus:border-[#155A96] focus:ring-2 focus:ring-[#155A96]/20 text-sm text-[#191C20] placeholder-[#717781] outline-none transition-all"
+                      className="w-full px-4 py-3.5 rounded-2xl bg-white border border-[#C2C7D0] focus:border-[#155A96] focus:ring-2 focus:ring-[#155A96]/20 text-base text-[#191C20] placeholder-[#717781] outline-none transition-all"
                     />
                   </div>
 
@@ -305,7 +305,7 @@ export const ContactPresupuestoSection: React.FC<ContactPresupuestoSectionProps>
                   <div className="space-y-1.5">
                     <label
                       htmlFor="servicio"
-                      className="block text-xs font-bold uppercase tracking-wider text-[#191C20]"
+                      className="block text-sm font-bold uppercase tracking-wider text-[#191C20]"
                     >
                       Tipo de Servicio <span className="text-red-500">*</span>
                     </label>
@@ -314,7 +314,7 @@ export const ContactPresupuestoSection: React.FC<ContactPresupuestoSectionProps>
                       name="servicio"
                       required
                       defaultValue={prefilledService || 'Vivienda Particular / Chalet'}
-                      className="w-full px-4 py-3 rounded-2xl bg-white border border-[#C2C7D0] focus:border-[#155A96] focus:ring-2 focus:ring-[#155A96]/20 text-sm text-[#191C20] outline-none transition-all"
+                      className="w-full px-4 py-3.5 rounded-2xl bg-white border border-[#C2C7D0] focus:border-[#155A96] focus:ring-2 focus:ring-[#155A96]/20 text-base text-[#191C20] outline-none transition-all"
                     >
                       {serviciosList.map((srv) => (
                         <option key={srv} value={srv}>
@@ -329,7 +329,7 @@ export const ContactPresupuestoSection: React.FC<ContactPresupuestoSectionProps>
                 <div className="space-y-1.5">
                   <label
                     htmlFor="mensaje"
-                    className="block text-xs font-bold uppercase tracking-wider text-[#191C20]"
+                    className="block text-sm font-bold uppercase tracking-wider text-[#191C20]"
                   >
                     Detalles del proyecto (Metros aproximados, altura, estado del tejado)
                   </label>
@@ -338,7 +338,7 @@ export const ContactPresupuestoSection: React.FC<ContactPresupuestoSectionProps>
                     name="mensaje"
                     rows={4}
                     placeholder="Ej. Necesitamos instalar aproximadamente 22 metros de canalón de aluminio en un chalet de dos plantas con 2 bajantes. Nos interesa el color antracita..."
-                    className="w-full px-4 py-3 rounded-2xl bg-white border border-[#C2C7D0] focus:border-[#155A96] focus:ring-2 focus:ring-[#155A96]/20 text-sm text-[#191C20] placeholder-[#717781] outline-none transition-all resize-y"
+                    className="w-full px-4 py-3.5 rounded-2xl bg-white border border-[#C2C7D0] focus:border-[#155A96] focus:ring-2 focus:ring-[#155A96]/20 text-base text-[#191C20] placeholder-[#717781] outline-none transition-all resize-y"
                   ></textarea>
                 </div>
 
@@ -349,9 +349,9 @@ export const ContactPresupuestoSection: React.FC<ContactPresupuestoSectionProps>
                     id="privacidad"
                     name="privacidad_aceptada"
                     required
-                    className="mt-1 w-4 h-4 rounded text-[#155A96] border-[#C2C7D0] focus:ring-[#155A96]"
+                    className="mt-1 w-5 h-5 rounded text-[#155A96] border-[#C2C7D0] focus:ring-[#155A96]"
                   />
-                  <label htmlFor="privacidad" className="text-xs text-[#58606B] leading-relaxed">
+                  <label htmlFor="privacidad" className="text-sm text-[#58606B] leading-relaxed">
                     He leído y acepto la{' '}
                     <span className="text-[#155A96] underline font-medium">
                       Política de Privacidad
@@ -365,12 +365,12 @@ export const ContactPresupuestoSection: React.FC<ContactPresupuestoSectionProps>
                 <div className="pt-2">
                   <button
                     type="submit"
-                    className="w-full py-4 px-8 rounded-full text-base font-bold text-white bg-[#155A96] hover:bg-[#0e4475] active:scale-98 shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2.5"
+                    className="w-full py-4 px-8 rounded-full text-lg font-bold text-white bg-[#155A96] hover:bg-[#0e4475] active:scale-98 shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2.5"
                   >
-                    <span className="material-symbols-outlined text-[20px]">send</span>
+                    <span className="material-symbols-outlined text-[22px]">send</span>
                     <span>Enviar solicitud de presupuesto gratis</span>
                   </button>
-                  <p className="text-center text-[11px] text-[#58606B] mt-2.5">
+                  <p className="text-center text-sm text-[#58606B] mt-3">
                     🔒 Sus datos están protegidos conforme al RGPD. No enviamos spam ni publicidad no deseada.
                   </p>
                 </div>

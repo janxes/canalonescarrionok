@@ -64,13 +64,13 @@ export const ServicesClientsSection: React.FC<ServicesClientsSectionProps> = ({
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14 sm:mb-16">
-          <span className="px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-[#D5E4F8] text-[#062544] inline-block mb-3">
+          <span className="px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-wider bg-[#D5E4F8] text-[#062544] inline-block mb-3">
             Especialización a Medida
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#191C20] tracking-tight font-heading">
             Soluciones adaptadas a cada tipo de cubierta
           </h2>
-          <p className="mt-4 text-base sm:text-lg text-[#41484D]">
+          <p className="mt-4 text-lg text-[#41484D] leading-relaxed">
             Fabricamos e instalamos con los más altos estándares de calidad, adaptando las dimensiones, 
             el espesor y los anclajes al uso específico de cada edificación en Castilla y León.
           </p>
@@ -84,7 +84,7 @@ export const ServicesClientsSection: React.FC<ServicesClientsSectionProps> = ({
               className="bg-white rounded-3xl overflow-hidden border border-[#EAEEF4] hover:border-[#155A96]/40 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group"
             >
               {/* Card Image with Badge */}
-              <div className="relative h-52 sm:h-56 overflow-hidden">
+              <div className="relative h-56 sm:h-60 overflow-hidden">
                 <img
                   src={service.image}
                   alt={service.title}
@@ -94,38 +94,38 @@ export const ServicesClientsSection: React.FC<ServicesClientsSectionProps> = ({
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                 
                 <div className="absolute top-4 left-4">
-                  <span className="px-3 py-1 rounded-full text-xs font-bold bg-white/90 backdrop-blur-md text-[#155A96] shadow-sm">
+                  <span className="px-3.5 py-1.5 rounded-full text-sm font-bold bg-white/95 backdrop-blur-md text-[#155A96] shadow-sm">
                     {service.badge}
                   </span>
                 </div>
 
-                <div className="absolute bottom-4 left-4 right-4 flex items-center gap-2 text-white">
-                  <div className="w-9 h-9 rounded-full bg-[#155A96] flex items-center justify-center shrink-0">
-                    <span className="material-symbols-outlined text-[20px] text-white">
+                <div className="absolute bottom-4 left-4 right-4 flex items-center gap-2.5 text-white">
+                  <div className="w-10 h-10 rounded-full bg-[#155A96] flex items-center justify-center shrink-0">
+                    <span className="material-symbols-outlined text-[22px] text-white">
                       {service.icon}
                     </span>
                   </div>
-                  <h3 className="font-bold text-lg font-heading leading-snug drop-shadow-sm">
+                  <h3 className="font-bold text-xl font-heading leading-snug drop-shadow-sm">
                     {service.title}
                   </h3>
                 </div>
               </div>
 
               {/* Card Body */}
-              <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between space-y-6">
+              <div className="p-6 sm:p-8 flex-1 flex flex-col justify-between space-y-6">
                 <div>
-                  <p className="text-sm text-[#41484D] leading-relaxed mb-5">
+                  <p className="text-base text-[#41484D] leading-relaxed mb-6 font-normal">
                     {service.description}
                   </p>
 
-                  <div className="space-y-3">
-                    <span className="block text-xs font-bold uppercase tracking-wider text-[#155A96]">
+                  <div className="space-y-3.5">
+                    <span className="block text-sm font-bold uppercase tracking-wider text-[#155A96]">
                       Puntos Clave del Servicio:
                     </span>
-                    <ul className="space-y-2.5">
+                    <ul className="space-y-3">
                       {service.features.map((feat, index) => (
-                        <li key={index} className="flex items-start gap-2.5 text-xs sm:text-sm text-[#191C20]">
-                          <span className="material-symbols-outlined text-[18px] text-[#155A96] shrink-0 mt-0.5">
+                        <li key={index} className="flex items-start gap-3 text-base text-[#191C20]">
+                          <span className="material-symbols-outlined text-[20px] text-[#155A96] shrink-0 mt-0.5">
                             check_circle
                           </span>
                           <span className="leading-snug">{feat}</span>
@@ -136,16 +136,16 @@ export const ServicesClientsSection: React.FC<ServicesClientsSectionProps> = ({
                 </div>
 
                 {/* Footer of Card with CTA */}
-                <div className="pt-4 border-t border-[#F1F4F9]">
-                  <p className="text-xs text-[#58606B] italic mb-4">
+                <div className="pt-5 border-t border-[#F1F4F9]">
+                  <p className="text-sm text-[#58606B] italic mb-4">
                     {service.tagline}
                   </p>
                   <button
                     onClick={() => onSelectService(service.title)}
-                    className="w-full py-3 px-5 rounded-full text-xs sm:text-sm font-bold text-[#155A96] bg-[#D5E4F8]/70 hover:bg-[#155A96] hover:text-white transition-colors duration-200 flex items-center justify-center gap-2"
+                    className="w-full py-3.5 px-5 rounded-full text-sm sm:text-base font-bold text-[#155A96] bg-[#D5E4F8]/70 hover:bg-[#155A96] hover:text-white transition-colors duration-200 flex items-center justify-center gap-2"
                   >
                     <span>Consultar para {service.badge}</span>
-                    <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
+                    <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
                   </button>
                 </div>
 

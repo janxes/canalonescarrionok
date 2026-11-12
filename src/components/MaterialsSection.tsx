@@ -89,13 +89,13 @@ export const MaterialsSection: React.FC<MaterialsSectionProps> = ({ onQuoteClick
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-          <span className="px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-[#D5E4F8] text-[#062544] inline-block mb-3">
+          <span className="px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-wider bg-[#D5E4F8] text-[#062544] inline-block mb-3">
             Guía Técnica de Materiales
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#191C20] tracking-tight font-heading">
             Materiales resistentes al clima de Castilla y León
           </h2>
-          <p className="mt-4 text-base sm:text-lg text-[#41484D]">
+          <p className="mt-4 text-lg text-[#41484D] leading-relaxed">
             Las continuas heladas invernales, el granizo y la radiación solar estival exigen aleaciones 
             de primera fundición que mantengan la ductilidad y la estanqueidad durante décadas.
           </p>
@@ -109,13 +109,13 @@ export const MaterialsSection: React.FC<MaterialsSectionProps> = ({ onQuoteClick
               <button
                 key={matKey}
                 onClick={() => setSelectedMaterial(matKey)}
-                className={`flex-1 min-w-[130px] py-3 px-4 rounded-full text-xs sm:text-sm font-bold transition-all duration-200 flex items-center justify-center gap-2 ${
+                className={`flex-1 min-w-[140px] py-3.5 px-5 rounded-full text-sm sm:text-base font-bold transition-all duration-200 flex items-center justify-center gap-2 ${
                   isSelected
                     ? 'bg-[#155A96] text-white shadow-sm'
                     : 'text-[#41484D] hover:text-[#155A96] hover:bg-white/60'
                 }`}
               >
-                <span className="material-symbols-outlined text-[18px]">
+                <span className="material-symbols-outlined text-[20px]">
                   {materialsData[matKey].icon}
                 </span>
                 <span>{materialsData[matKey].name.split(' ')[0]}</span>
@@ -131,10 +131,10 @@ export const MaterialsSection: React.FC<MaterialsSectionProps> = ({ onQuoteClick
             {/* Left Detail Column */}
             <div className="lg:col-span-7 space-y-6">
               <div className="flex flex-wrap items-center gap-3">
-                <span className={`px-3 py-1 rounded-full text-xs font-bold ${current.badgeClass}`}>
+                <span className={`px-3.5 py-1.5 rounded-full text-sm font-bold ${current.badgeClass}`}>
                   {current.tag}
                 </span>
-                <span className="text-xs text-[#58606B] font-medium">
+                <span className="text-sm text-[#58606B] font-medium">
                   Aleaciones certificadas según norma UNE-EN
                 </span>
               </div>
@@ -143,30 +143,30 @@ export const MaterialsSection: React.FC<MaterialsSectionProps> = ({ onQuoteClick
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-[#191C20] font-heading mb-2">
                   {current.name}
                 </h3>
-                <p className="text-sm sm:text-base font-semibold text-[#155A96]">
+                <p className="text-base sm:text-lg font-semibold text-[#155A96]">
                   {current.headline}
                 </p>
               </div>
 
-              <p className="text-sm sm:text-base text-[#41484D] leading-relaxed">
+              <p className="text-base text-[#41484D] leading-relaxed font-normal">
                 {current.description}
               </p>
 
               {/* Benefits list */}
-              <div className="space-y-3 pt-2">
-                <h4 className="text-xs font-bold uppercase tracking-wider text-[#191C20]">
+              <div className="space-y-3.5 pt-2">
+                <h4 className="text-sm font-bold uppercase tracking-wider text-[#191C20]">
                   Ventajas destacadas para tejados castellanos:
                 </h4>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                   {current.benefits.map((benefit, idx) => (
                     <div
                       key={idx}
-                      className="p-3.5 rounded-2xl bg-[#F1F4F9] border border-[#EAEEF4] flex items-start gap-2.5"
+                      className="p-4 rounded-2xl bg-[#F1F4F9] border border-[#EAEEF4] flex items-start gap-3"
                     >
-                      <span className="material-symbols-outlined text-[18px] text-[#155A96] shrink-0 mt-0.5">
+                      <span className="material-symbols-outlined text-[20px] text-[#155A96] shrink-0 mt-0.5">
                         check_circle
                       </span>
-                      <span className="text-xs text-[#191C20] font-medium leading-snug">
+                      <span className="text-sm sm:text-base text-[#191C20] font-medium leading-snug">
                         {benefit}
                       </span>
                     </div>
@@ -177,24 +177,24 @@ export const MaterialsSection: React.FC<MaterialsSectionProps> = ({ onQuoteClick
               {/* Color swatch demonstration (only for aluminium, but noted for all) */}
               {selectedMaterial === 'aluminio' && (
                 <div className="pt-4 border-t border-[#EAEEF4]">
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-[#191C20] mb-3">
+                  <h4 className="text-sm font-bold uppercase tracking-wider text-[#191C20] mb-3">
                     Muestra de colores RAL más solicitados:
                   </h4>
-                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                     {ralColors.map((c) => (
                       <div
                         key={c.ral}
-                        className="flex items-center gap-2 p-2 rounded-xl bg-[#FAFBFD] border border-[#EAEEF4]"
+                        className="flex items-center gap-2.5 p-2.5 rounded-xl bg-[#FAFBFD] border border-[#EAEEF4]"
                       >
                         <span
-                          className={`w-6 h-6 rounded-full shrink-0 shadow-inner ${c.border || ''}`}
+                          className={`w-7 h-7 rounded-full shrink-0 shadow-inner ${c.border || ''}`}
                           style={{ backgroundColor: c.hex }}
                         />
                         <div className="overflow-hidden">
-                          <span className="block text-[11px] font-bold text-[#191C20] truncate">
+                          <span className="block text-sm font-bold text-[#191C20] truncate">
                             {c.name}
                           </span>
-                          <span className="block text-[10px] text-[#58606B] truncate">{c.ral}</span>
+                          <span className="block text-xs text-[#58606B] truncate">{c.ral}</span>
                         </div>
                       </div>
                     ))}
@@ -205,51 +205,51 @@ export const MaterialsSection: React.FC<MaterialsSectionProps> = ({ onQuoteClick
             </div>
 
             {/* Right Technical Spec Column (M3 Tonal Container) */}
-            <div className="lg:col-span-5 bg-[#F1F4F9] rounded-3xl p-6 sm:p-7 border border-[#E2E7EE] space-y-6">
+            <div className="lg:col-span-5 bg-[#F1F4F9] rounded-3xl p-6 sm:p-8 border border-[#E2E7EE] space-y-6">
               
               <div className="flex items-center gap-3 pb-4 border-b border-[#E2E7EE]">
-                <div className="w-10 h-10 rounded-2xl bg-[#155A96] text-white flex items-center justify-center">
-                  <span className="material-symbols-outlined text-[22px]">tune</span>
+                <div className="w-11 h-11 rounded-2xl bg-[#155A96] text-white flex items-center justify-center">
+                  <span className="material-symbols-outlined text-[24px]">tune</span>
                 </div>
                 <div>
-                  <h4 className="font-bold text-sm text-[#191C20] font-heading">
+                  <h4 className="font-bold text-base text-[#191C20] font-heading">
                     Ficha Técnica Resumida
                   </h4>
-                  <p className="text-xs text-[#58606B]">Datos de rendimiento para Castilla y León</p>
+                  <p className="text-sm text-[#58606B]">Datos de rendimiento para Castilla y León</p>
                 </div>
               </div>
 
-              <div className="space-y-4 text-xs sm:text-sm">
+              <div className="space-y-4 text-sm sm:text-base">
                 
                 <div className="flex items-center justify-between py-2 border-b border-[#E2E7EE]/60">
-                  <span className="text-[#58606B] flex items-center gap-1.5">
-                    <span className="material-symbols-outlined text-[16px]">hourglass_empty</span>
+                  <span className="text-[#58606B] flex items-center gap-2">
+                    <span className="material-symbols-outlined text-[18px]">hourglass_empty</span>
                     Vida útil estimada
                   </span>
                   <span className="font-bold text-[#191C20]">{current.durability}</span>
                 </div>
 
                 <div className="flex items-center justify-between py-2 border-b border-[#E2E7EE]/60">
-                  <span className="text-[#58606B] flex items-center gap-1.5">
-                    <span className="material-symbols-outlined text-[16px]">ac_unit</span>
+                  <span className="text-[#58606B] flex items-center gap-2">
+                    <span className="material-symbols-outlined text-[18px]">ac_unit</span>
                     Resistencia a heladas
                   </span>
-                  <span className="font-bold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full text-xs">
+                  <span className="font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full text-sm">
                     {current.frostResistance}
                   </span>
                 </div>
 
                 <div className="flex items-center justify-between py-2 border-b border-[#E2E7EE]/60">
-                  <span className="text-[#58606B] flex items-center gap-1.5">
-                    <span className="material-symbols-outlined text-[16px]">build</span>
+                  <span className="text-[#58606B] flex items-center gap-2">
+                    <span className="material-symbols-outlined text-[18px]">build</span>
                     Mantenimiento
                   </span>
                   <span className="font-bold text-[#191C20]">{current.maintenance}</span>
                 </div>
 
                 <div className="flex items-start justify-between py-2">
-                  <span className="text-[#58606B] flex items-center gap-1.5 shrink-0">
-                    <span className="material-symbols-outlined text-[16px]">palette</span>
+                  <span className="text-[#58606B] flex items-center gap-2 shrink-0">
+                    <span className="material-symbols-outlined text-[18px]">palette</span>
                     Acabado visual
                   </span>
                   <span className="font-semibold text-[#191C20] text-right ml-4">
@@ -260,9 +260,9 @@ export const MaterialsSection: React.FC<MaterialsSectionProps> = ({ onQuoteClick
               </div>
 
               {/* Callout box */}
-              <div className="p-4 rounded-2xl bg-white border border-[#E2E7EE] text-xs space-y-1.5">
-                <span className="font-bold text-[#155A96] flex items-center gap-1">
-                  <span className="material-symbols-outlined text-[16px]">verified_user</span>
+              <div className="p-4 sm:p-5 rounded-2xl bg-white border border-[#E2E7EE] text-sm space-y-2">
+                <span className="font-bold text-[#155A96] flex items-center gap-1.5">
+                  <span className="material-symbols-outlined text-[18px]">verified_user</span>
                   Asesoramiento in situ gratuito
                 </span>
                 <p className="text-[#58606B] leading-relaxed">
@@ -274,10 +274,10 @@ export const MaterialsSection: React.FC<MaterialsSectionProps> = ({ onQuoteClick
               {/* Button */}
               <button
                 onClick={onQuoteClick}
-                className="w-full py-3.5 px-6 rounded-full text-xs sm:text-sm font-bold text-white bg-[#155A96] hover:bg-[#0e4475] shadow-sm hover:shadow transition-all flex items-center justify-center gap-2"
+                className="w-full py-4 px-6 rounded-full text-sm sm:text-base font-bold text-white bg-[#155A96] hover:bg-[#0e4475] shadow-sm hover:shadow transition-all flex items-center justify-center gap-2"
               >
                 <span>Pedir presupuesto en {current.name.split(' ')[0]}</span>
-                <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                <span className="material-symbols-outlined text-[20px]">arrow_forward</span>
               </button>
 
             </div>
